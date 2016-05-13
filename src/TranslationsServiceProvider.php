@@ -12,8 +12,9 @@ class TranslationsServiceProvider extends ServiceProvider
      * @var array
      */
     protected $commands = [
-        ImportTranslationsCommand::class,
-        CleanTranslationsCommand::class,
+        Commands\ImportTranslations::class,
+        Commands\CleanTranslations::class,
+        Commands\ExportTranslations::class,
     ];
 
     /**

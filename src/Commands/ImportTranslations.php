@@ -1,11 +1,10 @@
 <?php
 
-namespace Hpkns\Translations;
+namespace Hpkns\Translations\Commands;
 
 use Illuminate\Console\Command;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
 
-class ImportTranslationsCommand extends Command
+class ImportTranslations extends Command
 {
     /**
      * The name and signature of the console command.

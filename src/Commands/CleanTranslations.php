@@ -1,11 +1,10 @@
 <?php
 
-namespace Hpkns\Translations;
+namespace Hpkns\Translations\Commands;
 
 use Illuminate\Console\Command;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
 
-class CleanTranslationsCommand extends Command
+class CleanTranslations extends Command
 {
     /**
      * The name and signature of the console command.
@@ -19,7 +18,7 @@ class CleanTranslationsCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Clean the translations.';
+    protected $description = 'Remove empty translations from files';
 
     /**
      * Create a new command instance.
@@ -31,7 +30,7 @@ class CleanTranslationsCommand extends Command
         parent::__construct();
 
         $this->filesystem = app('files');
-        $this->dumper = app(Support\ArrayDumper::class);
+        //$this->dumper = app(Support\ArrayDumper::class);
     }
 
 
